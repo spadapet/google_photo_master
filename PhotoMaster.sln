@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CasCap.Apis.GooglePhotos", "vendor\CasCap.Apis.GooglePhotos\src\CasCap.Apis.GooglePhotos\CasCap.Apis.GooglePhotos.csproj", "{53B89094-2362-40C4-B8BA-9E0B5E9CDFF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{AAE5BCB4-3E13-4090-81F4-B9107A685784}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAE5BCB4-3E13-4090-81F4-B9107A685784}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAE5BCB4-3E13-4090-81F4-B9107A685784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53B89094-2362-40C4-B8BA-9E0B5E9CDFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53B89094-2362-40C4-B8BA-9E0B5E9CDFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53B89094-2362-40C4-B8BA-9E0B5E9CDFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53B89094-2362-40C4-B8BA-9E0B5E9CDFF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

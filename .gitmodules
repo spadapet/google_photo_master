@@ -1,0 +1,4 @@
+[submodule "vendor/CasCap.Apis.GooglePhotos"]
+	path = vendor/CasCap.Apis.GooglePhotos
+	url = https://github.com/f2calv/CasCap.Apis.GooglePhotos.git
+	branch = main
