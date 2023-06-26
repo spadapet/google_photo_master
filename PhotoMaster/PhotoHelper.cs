@@ -38,8 +38,8 @@ namespace PhotoMaster
 
                 Console.WriteLine($"Fetching album: {album.title} ({album.mediaItemsCount} items)");
 
-                List<MediaItem> items = await this.photos.GetMediaItemsByAlbumAsync(album.id, cancellationToken: token);
-                foreach (MediaItem item in items)
+                IAsyncEnumerable<MediaItem> items = this.photos.GetMediaItemsByAlbumAsync(album.id, cancellationToken: token);
+                await foreach (MediaItem item in items)
                 {
                     (album == specialAlbum ? itemsInSpecialAlbum : itemsInAlbums).Add(item.id);
                 }
@@ -47,8 +47,8 @@ namespace PhotoMaster
 
             Console.WriteLine($"Fetching all media items");
 
-            List<MediaItem> allItems = await this.photos.GetMediaItemsByDateRangeAsync(new DateTime(2021, 6, 1), DateTime.Now, cancellationToken: token);
-            foreach (MediaItem item in allItems)
+            IAsyncEnumerable<MediaItem> allItems = this.photos.GetMediaItemsByDateRangeAsync(new DateTime(2021, 6, 1), DateTime.Now, cancellationToken: token);
+            await foreach (MediaItem item in allItems)
             {
                 if (!itemsInAlbums.Contains(item.id))
                 {
